@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Account - Panda Stocks</title>
+        <link rel="stylesheet" href="/Frontend/CSS/create.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="nameHeader">
+        <h1 onclick="window.location.href='entry_page.html'">Panda Stocks</h1>
+    </div>
+    <hr>
+    <div class="around">
+        <div class="create">
+            <h2>Create Account</h2>
+            <hr>
+            <div class="infoBox">
+                <form id="registerForm" onsubmit="createUser(event)"> <!-- Link to JS function -->
+                    <h4 id="instruct"> 
+                        Enter your legal first and last name to create your account.
+                    </h4>
+                    <input type="text" class="info" id="firstname" name="firstname" placeholder="FIRST NAME" required> 
+                    <input type="text" class="info" id="lastname" name="lastname" placeholder="LAST NAME" required>
+                    
+                    <p id="instruct">
+                        Now use your email and a unique password.
+                    </p>
+                    <input type="text" class="info" id="username" name="username" placeholder="USERNAME" required> 
+                    <input type="password" class="info" id="password" name="password" placeholder="PASSWORD" required>
+                    <input type="checkbox" onclick="document.getElementById('password').type = this.checked ? 'text' : 'password';"> Show Password
+                    <div class="alreadyAccount2">
+                        <p class="alreadyAccount" onclick="window.location.href='login.html'">Already have an account?</p>
+                    </div>
+                    <div class="button">
+                        <button class="buttonFunction" type="submit">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/Frontend/JS/create.js"></script>
+</body>
+</html>

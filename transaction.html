@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction - Panda Stocks</title>
+    <link rel="stylesheet" href="/Frontend/CSS/transaction.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Panda Stock</h1>
+    <hr>
+    <main>
+        <section id="transaction-section">
+            <h2>Transaction</h2>
+            <form id="transaction-form">
+                <label for="buyer-power">Buyer's power ($): </label>
+                <br>
+
+                <label for="stock-name">Stock name:</label>
+                <input type="text" id="stock-name" name="stock-name" required>
+                <br>
+
+                <label for="transaction-type">Transaction:</label>
+                <select id="transaction-type" name="transaction-type">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                    <option value="view">View</option>
+                </select>
+                <br>
+
+                <div id = num-shares-info>
+                <label for="number-of-shares">Number of Shares:</label>
+                <input type="number" id="number-of-shares" name="number-of-shares" required>
+                <br>
+                </div>
+
+                <div class = "ButtonDiv">
+                    <a class = "goBack" href="index.html">Go Back?</a>
+                    <button type="submit">Confirm?</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="stock-section">
+            <h2>Stock Info<span id="stock-name-display"></span></h2>
+            <p><span id="current-price"></span></p>
+            <div id="stock-details">
+                <!-- Stock details like description, sector, etc., will go here -->
+            </div>
+        </section>
+        
+    </main>
+    <script src="/Frontend/JS/transaction.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Panda Stocks</title>
+        <link rel="stylesheet" href="/Frontend/CSS/login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <div class="nameHeader">
+        <h1 onclick="window.location.href='entry_page.html'" >Panda Stocks</h1>
+      </div>
+    <hr>
+    <div class="around">
+    <div class="create">
+            <h2>Login</h2>
+            <hr>
+            <div class = "infoBox">
+            <form onsubmit="logUser(event)">
+                    <p id="instruct">
+                        Enter Your Username and Password
+                    </p>
+                   <input type="text" class="info" id="username" placeholder="USERNAME" required> 
+                   <input type="password" class="info" id="password" placeholder="PASSWORD" required>
+                   <input type="checkbox" onclick="document.getElementById('password').type = this.checked ? 'text' : 'password';">Show Password
+                   <div class="alreadyAccount2">
+                    <p class = "alreadyAccount"onclick="window.location.href='create.html'">Create Account?</p>
+                   </div>
+                   <div class = "button"><p><button class = "buttonFunction" type ="sumbit">Login</button></p></div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src = "/Frontend/JS/login.js"></script>
+</body>
+</html>
